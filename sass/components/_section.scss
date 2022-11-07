@@ -1,0 +1,21 @@
+.section {
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include destop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include destop {
+        margin-bottom: 50px;;
+    }
+}

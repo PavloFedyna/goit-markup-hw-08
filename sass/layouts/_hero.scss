@@ -1,7 +1,9 @@
 .hero {
     background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/Img_hero.jpg);
@@ -10,6 +12,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include destop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
 }
 
 .hero__title {
@@ -26,7 +32,7 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
     color: var(--hero-color);
-    max-width: 350px;
+    max-width: 360px;
     margin: 0 auto;
     @include destop {
         font-size: 44px;

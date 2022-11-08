@@ -341,9 +341,8 @@ body {
 }
 
 .header {
-  border: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header__container {
@@ -416,19 +415,25 @@ body {
   background: var(--accent-color);
   border-radius: 2px;
   position: absolute;
-  bottom: -34px;
+  bottom: -33px;
 }
 
 .hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
   max-width: 1600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -439,7 +444,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-color);
-  max-width: 350px;
+  max-width: 360px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {

@@ -24,10 +24,8 @@
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a class="logo header_logo link" href="./index.html"
-            >Web<span class="logo__part logo__part--dark">Studio</span></a
-          >
-          <ul class="menu list">
+          <a class="logo header_logo link" href="./index.html">Web<span class="logo__part logo__part--dark">Studio</span></a>
+          <ul class="menu header__navgation-list list">
             <li class="menu__item">
               <a class="menu__link link current" href="./index.html">Студія</a>
             </li>
@@ -40,7 +38,7 @@
           </ul>
         </nav>
         <div class="contacts header__contacts">
-          <ul class="menu list">
+          <ul class="menu contacts__list list">
             <li class="menu__item">
               <a
                 class="menu__link contacts__link link"
@@ -60,13 +58,12 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="menu-open-btn"data-menu-open>
+        <button type="button" class="menu-open-btn" data-menu-open>
           <svg class="menu__icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu_open"></use>
           </svg>
         </button>
-      </div>
-        <div class="mob-menu" data-menu>
+        <div class="mob-menu is-hidden" data-menu>
           <div class="container">
             <div class="mob-menu__top">
               <button type="button" class="menu-close-btn" data-menu-close>
@@ -74,50 +71,61 @@
                   <use href="./images/symbol-defs.svg#icon-close-black"></use>
                 </svg>
               </button>
-                <ul class="mob-menu-list list">
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link link current" href="./index.html">Студія</a>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link current" href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="./portolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu_bottom">
+              <div class="mob-contacts">
+                <ul class="mob-contacts-list list">
+                  <li class="mob-contacts__item">
+                    <a
+                      class="mob-contacts__link-tel link"
+                      href="tel:+380961111111"
+                      >+38 096 111 11 11
+                    </a>
                   </li>
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link link" href="./portolio.html">Портфоліо</a>
-                  </li>
-                  <li class="mob-menu__item">
-                    <a class="mob-menu__link link" href="">Контакти</a>
+                  <li class="mob-contacts__item">
+                    <a
+                      class="mob-contacts__link-mail link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com
+                    </a>
                   </li>
                 </ul>
-            </div>
-              <div class="mob-menu_bottom">
-                <div class="mob-contacts">
-                  <ul class="mob-contacts-list list">
-                    <li class="mob-contacts__item">
-                      <a class="mob-contacts__link-tel link" href="tel:+380961111111">+38 096 111 11 11
-                      </a>
-                    </li>
-                    <li class="mob-contacts__item">
-                      <a class="mob-contacts__link-mail link" href="mailto:info@devstudio.com">info@devstudio.com
-                        </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mob-soc">
-                  <ul class="mob-soc-list list">
-                    <li class="mob-soc-item">
-                      <a class="mob-soc-link link" href="">Instagram</a>
-                    </li>
-                    <li class="mob-soc-item">
-                      <a class="mob-soc-link link" href="">Twitter</a>
-                    </li>
-                    <li class="mob-soc-item">
-                      <a class="mob-soc-link link" href="">Facebook</a>
-                    </li>
-                    <li class="mob-soc-item">
-                      <a class="mob-soc-link link" href="">LinkedIn</a>
-                    </li>
-                  </ul>
-                </div>
               </div>
+              <div class="mob-soc">
+                <ul class="mob-soc-list list">
+                  <li class="mob-soc-item">
+                    <a class="mob-soc-link link" href="">Instagram</a>
+                  </li>
+                  <li class="mob-soc-item">
+                    <a class="mob-soc-link link" href="">Twitter</a>
+                  </li>
+                  <li class="mob-soc-item">
+                    <a class="mob-soc-link link" href="">Facebook</a>
+                  </li>
+                  <li class="mob-soc-item">
+                    <a class="mob-soc-link link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </header>
     <main>
       <section class="hero section">
@@ -614,6 +622,5 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-
   </body>
 </html>

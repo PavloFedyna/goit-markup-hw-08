@@ -1,9 +1,13 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    // line-height: 1.15;
+    line-height: calc(30/20);
     text-align: center;
     margin-bottom: 12px;
+    @include destop {
+    line-height: 1.15;
+    }
 }
 
 
@@ -85,11 +89,17 @@
 
 
 .modal-label-check {
-    line-height: calc(24 / 14);
+    font-size: 12px;
+        line-height: calc(14/12);
+    // line-height: calc(24 / 14);
     color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    @include destop {
+        font-size: 14px;
+    line-height: calc(24 / 14);
+    }
     a {
             color: var(--accent-color);
         }
